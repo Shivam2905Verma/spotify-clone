@@ -1,0 +1,40 @@
+.border {
+  border: 2px solid red;
+  margin: 3px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.leftwidth{
+  min-width: 420px;
+}
+
+.width {
+  width: 25vw;
+}
+
+.max-height {
+  max-height: 18.5rem;
+}
+
+.width2{
+    width: 80.8vw;
+}
+
+.max-height2{
+    max-height: 27.5rem;
+}

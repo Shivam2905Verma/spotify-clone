@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar flex item-center">
+        <div class="logo">
+          <img class="invert spotifylogo" src="logo.svg" alt="spotify logo" />
+        </div>
+        <div class="middle-nav">
+          <div class="home">
+            <img class="invert" src="home.svg" alt="home logo" />
+          </div>
+          <div class="input">
+            <img
+              height="20rem"
+              class="invert searchimg"
+              src="search.svg"
+              alt="search svg"
+            />
+            <input class="likho" type="text" placeholder="What do you want to play?" />
+            <div class="browser1">
+              <img
+                height="20rem"
+                class="invert"
+                src="browser.svg"
+                alt="browser"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="enter flex">
+          <div class="signup">Sign up</div>
+          <div class="login">Log in</div>
+        </div>
+      </div>
+    </header>
+    <div class="container flex">
+      <div class="left">
+        <div class="top">
+          <img class="invert" src="library.svg" alt="library" />
+          <p>Your Library</p> 
+          <div class="cross">
+
+            <img class="invert" src="cross.svg" alt="">
+          </div>
+        </div>
+        <div class="middle" id="first">
+          <p id="playlist-firstline">Create your first playlist</p>
+          <p id="playlist-secondline">it's easy,we'll help you</p>
+          <div class="createplaylist" id="createplaylist">Create playlist</div>
+        </div>
+        <div class="middle" id="second">
+          <p id="browser-firstline">Let's find some podcasts to follow</p>
+          <p id="browser-secondline">We'll keep you updated on new episodes</p>
+          <div class="browser">Browser podcasts</div>
+        </div>
+        <footer>
+          <div class="formalities flex">
+            <a href="">Legal</a>
+            <a href="">Safety & PrivacyCenter</a>
+            <a href="">PrivacyPolicy</a>
+            <a href="">Cookies</a>
+            <a href="">About Ads</a>
+            <a href="">Accessibility</a>
+          </div>
+          <div class="footer">
+            <a href="">Cookies</a>
+          </div>
+          <div class="language">
+            <i class="fa-solid fa-globe"></i>
+            <p>English</p>
+          </div>
+        </footer>
+      </div>
+      <div class="right">
+        <div class="popular-artists">Popular artists</div>
+        <div class="all-cards">
+          <div data-folder="karanaujla" id="karanaujla" class="card">
+            <div class="playbutton"><i class="fa-solid fa-play"></i></div>
+            <img src="karanaujla.jpg" />
+            <p class="card-name">Karan aujla</p>
+            <p class="aritist-spell">Artist</p>
+          </div>
+
+
+
+          <div data-folder="prabh" id="prabh" class="card">
+            <div class="playbutton"><i class="fa-solid fa-play"></i></div>
+            <img src="prabhsingh.jpg" />
+            <p class="card-name">prabh</p>
+            <p class="aritist-spell">Artist</p>
+          </div>
+
+
+
+
+          
+          <div data-folder="zehrvibe" id="zehrvibe"class="card">
+            <div class="playbutton"><i class="fa-solid fa-play"></i></div>
+            <img src="zehrvibe.jpg" />
+            <p class="card-name">zehrvibe</p>
+            <p class="aritist-spell">Artist</p>
+          </div>
+          <div data-folder="charlieputh" id="charlieputh" class="card">
+            <div class="playbutton"><i class="fa-solid fa-play"></i></div>
+            <img src="charlieputh.jpg" />
+            <p class="card-name">charlie puth</p>
+            <p class="aritist-spell">Artist</p>
+          </div>
+          <div data-folder="diljitdosanjh" id="diljit dosanjh" class="card">
+            <div class="playbutton"><i class="fa-solid fa-play"></i></div>
+            <img src="diljitdosanjh.jpg" />
+            <p class="card-name">diljit dosanjh</p>
+            <p class="aritist-spell">Artist</p>
+          </div>
+
+
+
+        </div>
+        <div class="playbar ">
+          <div class="seekbar">
+            <div class="circle">
+            </div>
+          </div>
+          <div class="allaboutsong">
+          <div class="songinfo"></div>
+          <div class="playpause">
+            <span id="privious"><i class="fa-solid fa-backward-step"></i></span>
+            <span id="play"><i class="fa-solid fa-play"></i></span>
+            <span id="next"><i class="fa-solid fa-forward-step"></i></span>
+          </div>
+          <div class="volumeandtime">
+            <div class="songtime"></div>
+            <div class="volume">
+              <div class="vol-icon">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <input type="range" name="volume">
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
